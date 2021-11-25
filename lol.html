@@ -1,0 +1,88 @@
+<style>
+  #wrapperpics {
+    display: flex;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #vorherBild {
+    flex-basis: 50%;
+    overflow: hidden;
+    max-width: 900px;
+  }
+
+  #vorherTxt {
+    flex-basis: 50%;
+    background-color: red;
+    height: 530px;
+  }
+
+  #nacherBild {
+    display: none;
+  }
+  #nacheroverlay {
+    display: none;
+  }
+  #nacherText {
+    display: none;
+  }
+
+  @media (max-width: 1200px) {
+    #pipipopopo2 {
+      display: none;
+      max-width: 1200px;
+    }
+    #vorherTxt {
+      display: none;
+    }
+    #nacherBild {
+      display: block;
+    }
+    #nacheroverlay {
+      display: block;
+      position: absolute;
+      width: 100%;
+      opacity: 0.4;
+      height: 530px;
+      background-color: red;
+      z-index: 5;
+    }
+    #nacherText {
+      display: block;
+      position: absolute;
+      z-index: 15;
+
+      top: 50%;
+      left: 50%;
+    }
+  }
+</style>
+
+<div id="wrapperpics">
+  <div id="vorherBild">
+    <img
+      src="https://www.ruetue.de/files/Bilder_Ruetue/Bilder_Startseite%20Homepage/Content_Startseite/farbmischanlage.jpg"
+      id="thepic2"
+    />
+  </div>
+
+  <div id="vorherTxt">
+    <h2>SthSth</h2>
+    <p>SomeTextOrSth</p>
+    <button>Click</button>
+  </div>
+
+  <div id="nacherBild">
+    <img
+      src="https://www.ruetue.de/files/Bilder_Ruetue/Bilder_Startseite%20Homepage/Content_Startseite/farbmischanlage.jpg"
+    />
+  </div>
+  <div id="nacheroverlay"></div>
+
+  <div id="nacherText">
+    <h2>SthSth</h2>
+    <p>SomeTextOrSth</p>
+    <button>Click</button>
+  </div>
+</div>
