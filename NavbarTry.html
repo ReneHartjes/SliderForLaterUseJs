@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="headerwrapper">
+      <div id="tophead">
+        <div></div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Kontakt</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
+      </div>
+      <div id="midhead">
+        <a href="#"
+          ><img
+            width="100"
+            height="100"
+            src="https://github.com/ReneHartjes/CvPageFrontend/blob/master/src/components/images/icoms/rbfin.png?raw=true"
+        /></a>
+        <div></div>
+      </div>
+      <div>
+        <div id="bothead">
+          <ul id="navbar">
+            <li>
+              <a
+                ><img
+                  width="25"
+                  height="25"
+                  src="https://github.com/ReneHartjes/CvPageFrontend/blob/master/src/components/images/icoms/rbfin.png?raw=true"
+              /></a>
+            </li>
+            <li><a href="#">Start</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <li><a href="#">Öffnungszeiten</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">über Uns</a></li>
+          </ul>
+
+          <ul id="login">
+            <li><a href="#">Einloggen</a></li>
+            <li><a href="#">Registrieren</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      #bothead {
+        display: flex;
+        background-color: #333;
+        color: white;
+      }
+      #bothead a {
+        color: white;
+        font-size: 16px;
+      }
+      #login {
+        display: flex;
+      }
+      #login li {
+        margin-left: 15px;
+      }
+      #navbar {
+        display: flex;
+        flex-basis: 80%;
+        flex-wrap: wrap;
+      }
+      #navbar li {
+        margin-left: 10px;
+      }
+      #navbar li::after {
+        content: "|";
+        margin: 0 0 5px 10px;
+      }
+      #navbar li:first-child::after {
+        content: " ";
+      }
+
+      #navbar li:last-child::after {
+        content: " ";
+      }
+      #tophead ul {
+        display: flex;
+        justify-content: flex-start;
+        flex-basis: 20%;
+      }
+      #tophead {
+        display: flex;
+        background-color: #333;
+      }
+      #tophead div {
+        flex-basis: 80%;
+      }
+      #tophead ul li {
+        margin-left: 10px;
+        padding: 4px;
+        background-color: #ccc;
+      }
+      #midhead {
+        background-color: #333;
+        border-top: 1px white solid;
+        border-bottom: 1px solid white;
+      }
+    </style>
+  </body>
+</html>
